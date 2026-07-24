@@ -1,0 +1,508 @@
+:root {
+  --sk-cruise-bg: #f5f8fc;
+  --sk-cruise-surface: #ffffff;
+  --sk-cruise-surface-soft: #f8fbfe;
+  --sk-cruise-border: #dbe5ef;
+  --sk-cruise-text: #203246;
+  --sk-cruise-muted: #5f7285;
+  --sk-cruise-primary: #034295;
+  --sk-cruise-primary-strong: #032f6c;
+  --sk-cruise-accent: #ffbe42;
+  --sk-cruise-shadow: 0 18px 38px rgba(3, 66, 149, 0.08);
+  --sk-cruise-shadow-hover: 0 24px 48px rgba(3, 66, 149, 0.14);
+  --sk-cruise-radius-xl: 30px;
+  --sk-cruise-radius-lg: 24px;
+  --sk-cruise-radius-md: 18px;
+}
+
+body.shared-index-page.section-cruise {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(20, 79, 130, 0.08), transparent 24%),
+    linear-gradient(180deg, #f8fbfe 0%, #eff5fb 56%, #f7fafc 100%);
+  color: var(--sk-cruise-text);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.shared-index-page.section-cruise,
+.shared-index-page.section-cruise p,
+.shared-index-page.section-cruise a,
+.shared-index-page.section-cruise h1,
+.shared-index-page.section-cruise h2,
+.shared-index-page.section-cruise h3,
+.shared-index-page.section-cruise h4,
+.shared-index-page.section-cruise h5,
+.shared-index-page.section-cruise h6,
+.shared-index-page.section-cruise li,
+.shared-index-page.section-cruise button,
+.shared-index-page.section-cruise span {
+  font-family: "Poppins", sans-serif;
+}
+
+.shared-index-page.section-cruise img {
+  max-width: 100%;
+  display: block;
+}
+
+.shared-index-page.section-cruise a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shared-index-page.section-cruise .section-header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.shared-index-page.section-cruise .section-title {
+  margin: 0 0 12px;
+  color: var(--sk-cruise-primary-strong);
+  font-size: clamp(1.8rem, 1.2rem + 1vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.shared-index-page.section-cruise .section-subtitle {
+  margin: 0 auto;
+  color: var(--sk-cruise-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.shared-index-page.section-cruise .cruise-shell {
+  width: min(1320px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.shared-index-page.section-cruise .cruise-hero {
+  position: relative;
+  min-height: clamp(420px, 72vh, 640px);
+  overflow: hidden;
+  border-radius: 0 0 32px 32px;
+  background: linear-gradient(140deg, #06284f 0%, #0a4f99 52%, #0c6abf 100%);
+  box-shadow: 0 20px 48px rgba(8, 35, 72, 0.18);
+}
+
+.shared-index-page.section-cruise .cruise-hero__media,
+.shared-index-page.section-cruise .cruise-hero__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shared-index-page.section-cruise .cruise-hero__media img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.shared-index-page.section-cruise .cruise-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(115deg, rgba(4, 20, 43, 0.76) 0%, rgba(4, 20, 43, 0.42) 45%, rgba(4, 20, 43, 0.25) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 44%, rgba(5, 26, 51, 0.3) 100%);
+}
+
+.shared-index-page.section-cruise .cruise-hero__content {
+  position: relative;
+  z-index: 1;
+  width: min(1320px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(84px, 11vw, 132px) 0 clamp(56px, 7vw, 88px);
+  color: #fff;
+}
+
+.shared-index-page.section-cruise .cruise-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff0c9;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shared-index-page.section-cruise .cruise-hero h1 {
+  max-width: 760px;
+  margin: 0 0 18px;
+  font-size: clamp(2.5rem, 1.8rem + 2vw, 4.8rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.shared-index-page.section-cruise .cruise-hero p {
+  max-width: 680px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1rem, 0.92rem + 0.36vw, 1.16rem);
+  line-height: 1.85;
+}
+
+.shared-index-page.section-cruise .cruise-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.shared-index-page.section-cruise .cruise-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--sk-cruise-accent), #ffcf6a);
+  color: #06284f;
+  font-size: 0.96rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 16px 28px rgba(255, 190, 66, 0.24);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.shared-index-page.section-cruise .cruise-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 32px rgba(255, 190, 66, 0.28);
+  filter: brightness(1.03);
+}
+
+.shared-index-page.section-cruise .cruise-btn--secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+
+.shared-index-page.section-cruise .cruise-page {
+  padding: 38px 0 72px;
+}
+
+.shared-index-page.section-cruise .cruise-section + .cruise-section {
+  margin-top: 34px;
+}
+
+.shared-index-page.section-cruise .cruise-intro {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 38px;
+}
+
+.shared-index-page.section-cruise .cruise-stat {
+  padding: 22px;
+  border: 1px solid rgba(3, 66, 149, 0.08);
+  border-radius: var(--sk-cruise-radius-lg);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--sk-cruise-shadow);
+}
+
+.shared-index-page.section-cruise .cruise-stat strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--sk-cruise-primary-strong);
+  font-size: 1.18rem;
+  font-weight: 800;
+}
+
+.shared-index-page.section-cruise .cruise-stat p {
+  margin: 0;
+  color: var(--sk-cruise-muted);
+  line-height: 1.7;
+}
+
+.shared-index-page.section-cruise .cruise-brand-grid,
+.shared-index-page.section-cruise .cruise-zone-grid,
+.shared-index-page.section-cruise .cruise-route-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.shared-index-page.section-cruise .cruise-brand-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.shared-index-page.section-cruise .cruise-zone-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.shared-index-page.section-cruise .cruise-route-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.shared-index-page.section-cruise .cruise-card,
+.shared-index-page.section-cruise .cruise-zone-card,
+.shared-index-page.section-cruise .cruise-route-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(3, 66, 149, 0.1);
+  border-radius: var(--sk-cruise-radius-xl);
+  background: #fff;
+  box-shadow: var(--sk-cruise-shadow);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.shared-index-page.section-cruise .cruise-card:hover,
+.shared-index-page.section-cruise .cruise-zone-card:hover,
+.shared-index-page.section-cruise .cruise-route-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(3, 66, 149, 0.16);
+  box-shadow: var(--sk-cruise-shadow-hover);
+}
+
+.shared-index-page.section-cruise .cruise-card__media {
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.shared-index-page.section-cruise .cruise-card__media::after,
+.shared-index-page.section-cruise .cruise-route-card__media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 44%;
+  background: linear-gradient(180deg, rgba(3, 66, 149, 0) 0%, rgba(5, 31, 65, 0.46) 100%);
+}
+
+.shared-index-page.section-cruise .cruise-card__media img,
+.shared-index-page.section-cruise .cruise-route-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.shared-index-page.section-cruise .cruise-card:hover .cruise-card__media img,
+.shared-index-page.section-cruise .cruise-route-card:hover .cruise-route-card__media img {
+  transform: scale(1.05);
+}
+
+.shared-index-page.section-cruise .cruise-card__logo {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 1;
+  max-width: 150px;
+  max-height: 48px;
+  filter: drop-shadow(0 8px 18px rgba(5, 24, 48, 0.26));
+}
+
+.shared-index-page.section-cruise .cruise-card__body,
+.shared-index-page.section-cruise .cruise-route-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+}
+
+.shared-index-page.section-cruise .cruise-card__body h3,
+.shared-index-page.section-cruise .cruise-zone-card h3,
+.shared-index-page.section-cruise .cruise-route-card__body h3 {
+  margin: 0;
+  color: var(--sk-cruise-primary-strong);
+  font-size: clamp(1.16rem, 1rem + 0.2vw, 1.34rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.shared-index-page.section-cruise .cruise-card__body p,
+.shared-index-page.section-cruise .cruise-route-card__body p,
+.shared-index-page.section-cruise .cruise-zone-card p {
+  margin: 0;
+  color: var(--sk-cruise-muted);
+  line-height: 1.78;
+}
+
+.shared-index-page.section-cruise .cruise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shared-index-page.section-cruise .cruise-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(3, 66, 149, 0.08);
+  color: var(--sk-cruise-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.shared-index-page.section-cruise .cruise-zone-card {
+  padding: 22px;
+}
+
+.shared-index-page.section-cruise .cruise-zone-card ul,
+.shared-index-page.section-cruise .cruise-route-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--sk-cruise-muted);
+}
+
+.shared-index-page.section-cruise .cruise-zone-card li,
+.shared-index-page.section-cruise .cruise-route-list li {
+  margin: 0 0 8px;
+  line-height: 1.65;
+}
+
+.shared-index-page.section-cruise .cruise-route-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  min-height: 100%;
+}
+
+.shared-index-page.section-cruise .cruise-route-card__media {
+  position: relative;
+  min-height: 100%;
+}
+
+.shared-index-page.section-cruise .cruise-route-card__media img {
+  min-height: 100%;
+}
+
+.shared-index-page.section-cruise .cruise-route-list strong {
+  color: var(--sk-cruise-primary-strong);
+}
+
+.shared-index-page.section-cruise .cruise-route-card__actions {
+  margin-top: auto;
+}
+
+.shared-index-page.section-cruise .cruise-support {
+  margin-top: 34px;
+  padding: 22px;
+  border: 1px solid rgba(3, 66, 149, 0.08);
+  border-radius: var(--sk-cruise-radius-lg);
+  background: linear-gradient(135deg, #f8fbff 0%, #f2f7fd 100%);
+  box-shadow: var(--sk-cruise-shadow);
+}
+
+.shared-index-page.section-cruise .cruise-support__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.shared-index-page.section-cruise .cruise-support__item {
+  padding: 16px 18px;
+  border-radius: var(--sk-cruise-radius-md);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 0 0 1px rgba(3, 66, 149, 0.06);
+}
+
+.shared-index-page.section-cruise .cruise-support__item strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--sk-cruise-primary-strong);
+}
+
+.shared-index-page.section-cruise .cruise-support__item p {
+  margin: 0;
+  color: var(--sk-cruise-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 1199px) {
+  .shared-index-page.section-cruise .cruise-brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shared-index-page.section-cruise .cruise-zone-grid,
+  .shared-index-page.section-cruise .cruise-support__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .shared-index-page.section-cruise .cruise-hero {
+    min-height: 520px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .shared-index-page.section-cruise .cruise-shell,
+  .shared-index-page.section-cruise .cruise-hero__content {
+    width: min(100%, calc(100% - 24px));
+  }
+
+  .shared-index-page.section-cruise .cruise-intro,
+  .shared-index-page.section-cruise .cruise-route-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shared-index-page.section-cruise .cruise-route-card {
+    grid-template-columns: 1fr;
+  }
+
+  .shared-index-page.section-cruise .cruise-route-card__media {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shared-index-page.section-cruise .cruise-page {
+    padding: 28px 0 56px;
+  }
+
+  .shared-index-page.section-cruise .cruise-hero h1 {
+    max-width: 100%;
+  }
+
+  .shared-index-page.section-cruise .cruise-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .shared-index-page.section-cruise .cruise-btn {
+    width: 100%;
+  }
+
+  .shared-index-page.section-cruise .cruise-brand-grid,
+  .shared-index-page.section-cruise .cruise-zone-grid,
+  .shared-index-page.section-cruise .cruise-support__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shared-index-page.section-cruise .cruise-card__media {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shared-index-page.section-cruise .cruise-shell,
+  .shared-index-page.section-cruise .cruise-hero__content {
+    width: min(100%, calc(100% - 18px));
+  }
+
+  .shared-index-page.section-cruise .section-title {
+    font-size: 1.6rem;
+  }
+
+  .shared-index-page.section-cruise .section-subtitle,
+  .shared-index-page.section-cruise .cruise-hero p {
+    font-size: 0.94rem;
+    line-height: 1.72;
+  }
+
+  .shared-index-page.section-cruise .cruise-card__body,
+  .shared-index-page.section-cruise .cruise-zone-card,
+  .shared-index-page.section-cruise .cruise-route-card__body,
+  .shared-index-page.section-cruise .cruise-support {
+    padding: 18px;
+  }
+}

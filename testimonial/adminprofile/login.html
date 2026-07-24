@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | GRAND SK Holidays</title>
+  <link rel="icon" type="image/png" href="../../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-login-page">
+    <section class="login-brand">
+      <img class="login-logo" src="../../SK.png" alt="GRAND SK Holidays logo" style="background-color:blue; font-size: 25px;">
+      <div>
+        <h1>Testimonial Media Admin</h1>
+        <p>Manage customer images, videos, carousel previews, and published testimonial media from one dashboard.</p>
+      </div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="admin-top-actions">
+          <a class="admin-link-btn" href="../../index.html">Website</a>
+          <a class="logout-btn" href="../../index.html">Logout</a>
+        </div>
+
+        <h2>Admin Login</h2>
+        <p>Enter details and continue to the dashboard.</p>
+
+        <form class="login-form" action="dashboard.html">
+          <label>
+            Email
+            <input type="email" placeholder="admin@grandskholidays.com" required>
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Enter password" required>
+          </label>
+          <button class="login-submit" type="submit">Login to Dashboard</button>
+        </form>
+
+        <div class="login-note">Frontend demo login. Backend authentication can be connected later.</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

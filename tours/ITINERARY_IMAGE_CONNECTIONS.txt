@@ -1,0 +1,357 @@
+TOUR ITINERARY IMAGE CONNECTION GUIDE
+====================================
+
+Shared stylesheet:
+SK_holidays/tours/styles.css
+
+Shared fallback image:
+SK_holidays/tours/itinerary-placeholder.svg
+
+Where to connect itinerary images:
+1. Main hero carousel image slot: .pic .carousel-item img
+2. Single hero banner image slot: .background_main img
+3. Replace src="../../../../itinerary-placeholder.svg" with your real package image path.
+4. Keep using image files only. Do not add video tags back into itinerary pages.
+
+Recommended hero image setup:
+- Use 1 to 3 landscape images per itinerary page.
+- Recommended size: 1600x900 or similar 16:9 ratio.
+- Keep file size optimized for mobile.
+
+Pages currently using the shared placeholder image:
+SK_holidays/tours\international-tours\north-america\united\East_coast\Eastcoaststandard.php
+SK_holidays/tours\international-tours\north-america\united\East_coast\Eastcoaststandard.html
+SK_holidays/tours\international-tours\north-america\united\East_coast\Eastcoastpremium.php
+SK_holidays/tours\international-tours\north-america\united\Ultimate_USA\Ultimate_USA_standard.php
+SK_holidays/tours\international-tours\north-america\united\East_coast\Eastcoastpremium.html
+SK_holidays/tours\international-tours\north-america\united\Ultimate_USA\Ultimate_USA_standard.html
+SK_holidays/tours\international-tours\north-america\united\East_coast\Eastcoast.php
+SK_holidays/tours\international-tours\north-america\united\Ultimate_USA\Ultimate_USA_premium.php
+SK_holidays/tours\international-tours\north-america\united\East_coast\Eastcoast.html
+SK_holidays/tours\international-tours\north-america\united\Ultimate_USA\Ultimate_USA_premium.html
+SK_holidays/tours\international-tours\australia\newzland\Untouched South New Zealand - 7N 8D\Untouched South New Zealand.php
+SK_holidays/tours\international-tours\australia\newzland\Untouched South New Zealand - 7N 8D\Untouched South New Zealand premium.html
+SK_holidays/tours\international-tours\north-america\united\Ultimate_USA\Ultimate_USA.php
+SK_holidays/tours\international-tours\australia\newzland\Untouched South New Zealand - 7N 8D\Untouched South New Zealand.html
+SK_holidays/tours\international-tours\asia\thailand\Thailand with Phuket Krabi\Thailand with Phuket Krabi.php
+SK_holidays/tours\international-tours\Africa\seychelles\Picturesque Seychelles\Picturesque Seychelles.php
+SK_holidays/tours\international-tours\north-america\united\Ultimate_USA\Ultimate_USA.html
+SK_holidays/tours\international-tours\australia\newzland\Untouched South New Zealand - 7N 8D\Untouched South New Zealand standard.php
+SK_holidays/tours\international-tours\Africa\seychelles\Picturesque Seychelles\Picturesque Seychelles.html
+SK_holidays/tours\international-tours\asia\thailand\Thailand with Phuket Krabi\Thailand with Phuket Krabi.html
+SK_holidays/tours\international-tours\europe\europe\Europe- Switcherland\Switcherland standard.php
+SK_holidays/tours\international-tours\australia\newzland\Untouched South New Zealand - 7N 8D\Untouched South New Zealand standard.html
+SK_holidays/tours\international-tours\Africa\seychelles\Picturesque Seychelles\Picturesque Seychelles standard.php
+SK_holidays/tours\international-tours\asia\thailand\Thailand with Phuket Krabi\Thailand with Phuket Krabi standard.php
+SK_holidays/tours\international-tours\europe\europe\Europe- Switcherland\Switcherland standard.html
+SK_holidays/tours\international-tours\australia\newzland\Untouched South New Zealand - 7N 8D\Untouched South New Zealand premium.php
+SK_holidays/tours\international-tours\Africa\seychelles\Picturesque Seychelles\Picturesque Seychelles standard.html
+SK_holidays/tours\international-tours\europe\europe\Europe- Switcherland\Switcherland basic.php
+SK_holidays/tours\international-tours\asia\thailand\Thailand with Phuket Krabi\Thailand with Phuket Krabi standard.html
+SK_holidays/tours\international-tours\north-america\united\East&WestCoast\East&West.php
+SK_holidays/tours\international-tours\Africa\seychelles\Picturesque Seychelles\Picturesque Seychelles premium.php
+SK_holidays/tours\international-tours\north-america\united\East&WestCoast\East&Weststandard.php
+SK_holidays/tours\international-tours\europe\europe\Europe- Switcherland\Switcherland basic.html
+SK_holidays/tours\international-tours\north-america\united\East&WestCoast\East&West.html
+SK_holidays/tours\international-tours\asia\thailand\Thailand with Phuket Krabi\Thailand with Phuket Krabi premium.php
+SK_holidays/tours\international-tours\north-america\united\East&WestCoast\East&Weststandard.html
+SK_holidays/tours\international-tours\Africa\seychelles\Picturesque Seychelles\Picturesque Seychelles premium.html
+SK_holidays/tours\international-tours\asia\thailand\Thailand with Phuket Krabi\Thailand with Phuket Krabi premium.html
+SK_holidays/tours\international-tours\north-america\united\East&WestCoast\East&Westpremium.php
+SK_holidays/tours\international-tours\north-america\united\Texas\Texasstandard.php
+SK_holidays/tours\international-tours\north-america\united\East&WestCoast\East&Westpremium.html
+SK_holidays/tours\international-tours\australia\newzland\Scenic South Island in Newzealand - 7N 8D\Scenic South Island in Newzealand.php
+SK_holidays/tours\international-tours\north-america\united\Texas\Texasstandard.html
+SK_holidays/tours\international-tours\north-america\united\Texas\Texaspremium.php
+SK_holidays/tours\international-tours\australia\newzland\Scenic South Island in Newzealand - 7N 8D\Scenic South Island in Newzealand.html
+SK_holidays/tours\international-tours\north-america\united\Texas\Texaspremium.html
+SK_holidays/tours\international-tours\australia\newzland\Scenic South Island in Newzealand - 7N 8D\Scenic South Island in Newzealand standard.php
+SK_holidays/tours\international-tours\north-america\united\Coast-Coast\coast-coaststandard.php
+SK_holidays/tours\international-tours\north-america\united\Texas\Texas.php
+SK_holidays/tours\international-tours\australia\newzland\Scenic South Island in Newzealand - 7N 8D\Scenic South Island in Newzealand standard.html
+SK_holidays/tours\international-tours\north-america\united\Coast-Coast\coast-coaststandard.html
+SK_holidays/tours\international-tours\north-america\united\Texas\Texas.html
+SK_holidays/tours\international-tours\australia\newzland\Scenic South Island in Newzealand - 7N 8D\Scenic South Island in Newzealand premium.php
+SK_holidays/tours\international-tours\north-america\united\Coast-Coast\coast-coastpremium.php
+SK_holidays/tours\international-tours\asia\thailand\Thailand -Bangkok And Pattaya\Thailand -Bangkok And Pattaya.php
+SK_holidays/tours\international-tours\australia\newzland\Scenic South Island in Newzealand - 7N 8D\Scenic South Island in Newzealand premium.html
+SK_holidays/tours\international-tours\north-america\united\Coast-Coast\coast-coastpremium.html
+SK_holidays/tours\international-tours\asia\thailand\Thailand -Bangkok And Pattaya\Thailand -Bangkok And Pattaya.html
+SK_holidays/tours\international-tours\north-america\united\Coast-Coast\coast-coast.php
+SK_holidays/tours\international-tours\asia\thailand\Thailand -Bangkok And Pattaya\Thailand -Bangkok And Pattaya standard.php
+SK_holidays/tours\international-tours\north-america\united\Coast-Coast\coast-coast.html
+SK_holidays/tours\international-tours\europe\europe\Europe- Switcherland\Switcherland  premium.php
+SK_holidays/tours\international-tours\north-america\united\hawaii\hawaii.php
+SK_holidays/tours\international-tours\asia\thailand\Thailand -Bangkok And Pattaya\Thailand -Bangkok And Pattaya standard.html
+SK_holidays/tours\international-tours\north-america\united\hawaii\hawaii.html
+SK_holidays/tours\international-tours\north-america\united\hawaii\hawaiistandard.php
+SK_holidays/tours\international-tours\asia\thailand\Thailand -Bangkok And Pattaya\Thailand -Bangkok And Pattaya premium.php
+SK_holidays/tours\international-tours\europe\europe\Europe- Switcherland\Switcherland  premium.html
+SK_holidays/tours\international-tours\Africa\seychelles\Enthralling Seychelles\Enthralling Seychelles.php
+SK_holidays/tours\international-tours\north-america\united\hawaii\hawaiistandard.html
+SK_holidays/tours\international-tours\asia\thailand\Thailand -Bangkok And Pattaya\Thailand -Bangkok And Pattaya premium.html
+SK_holidays/tours\international-tours\Africa\seychelles\Enthralling Seychelles\Enthralling Seychelles.html
+SK_holidays/tours\international-tours\north-america\united\hawaii\hawaiipremium.php
+SK_holidays/tours\international-tours\Africa\seychelles\Enthralling Seychelles\Enthralling Seychelles standard.php
+SK_holidays/tours\international-tours\north-america\united\hawaii\hawaiipremium.html
+SK_holidays/tours\international-tours\Africa\seychelles\Enthralling Seychelles\Enthralling Seychelles standard.html
+SK_holidays/tours\international-tours\Africa\seychelles\Enthralling Seychelles\Enthralling Seychelles  premium.php
+SK_holidays/tours\international-tours\north-america\united\Amazing_USA\Amazing_USA.php
+SK_holidays/tours\international-tours\north-america\united\Florida\Floridastandard.php
+SK_holidays/tours\international-tours\Africa\seychelles\Enthralling Seychelles\Enthralling Seychelles  premium.html
+SK_holidays/tours\international-tours\north-america\united\Amazing_USA\Amazing_USA.html
+SK_holidays/tours\international-tours\north-america\united\Florida\Floridastandard.html
+SK_holidays/tours\international-tours\north-america\united\Amazing_USA\Amazing_USA-standard.php
+SK_holidays/tours\international-tours\north-america\united\Florida\Floridapremium.php
+SK_holidays/tours\international-tours\north-america\united\Amazing_USA\Amazing_USA-standard.html
+SK_holidays/tours\international-tours\north-america\united\Florida\Floridapremium.html
+SK_holidays/tours\international-tours\north-america\united\Amazing_USA\Amazing_USA-premium.php
+SK_holidays/tours\international-tours\north-america\united\Florida\Florida.php
+SK_holidays/tours\international-tours\north-america\united\Amazing_USA\Amazing_USA-premium.html
+SK_holidays/tours\international-tours\north-america\united\Florida\Florida.html
+SK_holidays/tours\international-tours\australia\australia\The_Big_Three_Australia\Big_Three.php
+SK_holidays/tours\international-tours\australia\australia\The_Big_Three_Australia\Big_Three.html
+SK_holidays/tours\international-tours\australia\australia\The_Big_Three_Australia\Big_Three-standard.php
+SK_holidays/tours\international-tours\australia\australia\The_Big_Three_Australia\Big_Three-standard.html
+SK_holidays/tours\international-tours\australia\australia\The_Big_Three_Australia\Big_Three-premium.php
+SK_holidays/tours\international-tours\australia\australia\The_Big_Three_Australia\Big_Three-premium.html
+SK_holidays/tours\international-tours\asia\sri-lanka\Srilanka\Srilankastandard.php
+SK_holidays/tours\international-tours\asia\sri-lanka\Srilanka\Srilankastandard.html
+SK_holidays/tours\international-tours\asia\sri-lanka\Srilanka\Srilankapremium.php
+SK_holidays/tours\international-tours\asia\sri-lanka\Srilanka\Srilankapremium.html
+SK_holidays/tours\international-tours\asia\sri-lanka\Srilanka\Srilanka.php
+SK_holidays/tours\international-tours\asia\russia\Russia - St. Petersburg - 4N 5D\Russia - St. Petersburg.php
+SK_holidays/tours\international-tours\asia\sri-lanka\Srilanka\Srilanka.html
+SK_holidays/tours\international-tours\asia\russia\Russia - St. Petersburg - 4N 5D\Russia - St. Petersburg.html
+SK_holidays/tours\international-tours\asia\russia\Russia - St. Petersburg - 4N 5D\Russia - St. Petersburg standard.php
+SK_holidays/tours\international-tours\asia\russia\Russia - St. Petersburg - 4N 5D\Russia - St. Petersburg standard.html
+SK_holidays/tours\international-tours\australia\australia\Stunning_Australia\Stun_Australia.php
+SK_holidays/tours\international-tours\asia\russia\Russia - St. Petersburg - 4N 5D\Russia - St. Petersburg  premium.php
+SK_holidays/tours\international-tours\australia\australia\Stunning_Australia\Stun_Australia.html
+SK_holidays/tours\international-tours\europe\europe\Europe - Swiss To Venice\Swiss to venice standard.php
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius-6 Nights  7 Days\Beautiful Mauritius.php
+SK_holidays/tours\international-tours\asia\russia\Russia - St. Petersburg - 4N 5D\Russia - St. Petersburg  premium.html
+SK_holidays/tours\international-tours\australia\australia\Stunning_Australia\Stun_Australia-standard.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Swiss To Venice\Swiss to venice standard.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius-6 Nights  7 Days\Beautiful Mauritius.html
+SK_holidays/tours\international-tours\australia\australia\Stunning_Australia\Stun_Australia-standard.html
+SK_holidays/tours\international-tours\europe\europe\Europe - Swiss To Venice\Swiss to venice premium.php
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius-6 Nights  7 Days\Beautiful Mauritius standard.php
+SK_holidays/tours\international-tours\australia\australia\Stunning_Australia\Stun_Australia-premium.php
+SK_holidays/tours\international-tours\australia\australia\Stunning_Australia\Stun_Australia-premium.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius-6 Nights  7 Days\Beautiful Mauritius standard.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius-6 Nights  7 Days\Beautiful Mauritius premium.php
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius-6 Nights  7 Days\Beautiful Mauritius premium.html
+SK_holidays/tours\international-tours\asia\russia\Russia - Moscow - 4N 5D\Russia-Moscow.php
+SK_holidays/tours\international-tours\asia\russia\Russia - Moscow - 4N 5D\Russia-Moscow.html
+SK_holidays/tours\international-tours\asia\russia\Russia - Moscow - 4N 5D\Russia-Moscow standard.php
+SK_holidays/tours\international-tours\asia\russia\Russia - Moscow - 4N 5D\Russia-Moscow standard.html
+SK_holidays/tours\international-tours\asia\russia\Russia - Moscow - 4N 5D\Russia-Moscow premium.php
+SK_holidays/tours\international-tours\australia\australia\Romantic_Australia\Rom_Sydney.php
+SK_holidays/tours\international-tours\asia\russia\Russia - Moscow - 4N 5D\Russia-Moscow premium.html
+SK_holidays/tours\international-tours\australia\australia\Romantic_Australia\Rom_Sydney.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius- 4 Nights  5 Days\Beautiful Mauritius.php
+SK_holidays/tours\international-tours\australia\australia\Romantic_Australia\Rom_Sydney-standard.php
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius- 4 Nights  5 Days\Beautiful Mauritius.html
+SK_holidays/tours\international-tours\australia\australia\Romantic_Australia\Rom_Sydney-standard.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius- 4 Nights  5 Days\Beautiful Mauritius standard.php
+SK_holidays/tours\international-tours\asia\singapore\Singapore\Singaporestandard.php
+SK_holidays/tours\international-tours\australia\australia\Romantic_Australia\Rom_Sydney-premium.php
+SK_holidays/tours\international-tours\asia\singapore\Singapore\Singaporestandard.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius- 4 Nights  5 Days\Beautiful Mauritius standard.html
+SK_holidays/tours\international-tours\australia\australia\Romantic_Australia\Rom_Sydney-premium.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius- 4 Nights  5 Days\Beautiful Mauritius premium.html
+SK_holidays/tours\international-tours\asia\singapore\Singapore\Singaporepremium.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Swiss To Venice\Swiss to venice premium.html
+SK_holidays/tours\international-tours\asia\singapore\Singapore\Singaporepremium.html
+SK_holidays/tours\international-tours\europe\europe\Europe - Swiss To Venice\Swiss to venice basic.php
+SK_holidays/tours\international-tours\asia\singapore\Singapore\Singapore.php
+SK_holidays/tours\international-tours\asia\singapore\Singapore\Singapore.html
+SK_holidays/tours\international-tours\asia\russia\Extravagance in Russia -6N 7D\Extravagance in Russia.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Swiss To Venice\Swiss to venice basic.html
+SK_holidays/tours\international-tours\Africa\mauritius\Beautiful Mauritius- 4 Nights  5 Days\Beautiful Mauritius premium.php
+SK_holidays/tours\international-tours\australia\australia\Magnificient_Sydney\Mag_Sydney.php
+SK_holidays/tours\international-tours\australia\australia\Magnificient_Sydney\Mag_Sydney.html
+SK_holidays/tours\international-tours\asia\russia\Extravagance in Russia -6N 7D\Extravagance in Russia.html
+SK_holidays/tours\international-tours\australia\australia\Magnificient_Sydney\Mag_Sydney-standard.php
+SK_holidays/tours\international-tours\asia\russia\Extravagance in Russia -6N 7D\Extravagance in Russia  standard.php
+SK_holidays/tours\international-tours\australia\australia\Magnificient_Sydney\Mag_Sydney-standard.html
+SK_holidays/tours\international-tours\asia\russia\Extravagance in Russia -6N 7D\Extravagance in Russia  standard.html
+SK_holidays/tours\international-tours\australia\australia\Magnificient_Sydney\Mag_Sydney-premium.php
+SK_holidays/tours\international-tours\asia\russia\Extravagance in Russia -6N 7D\Extravagance in Russia  premium.php
+SK_holidays/tours\international-tours\australia\australia\Magnificient_Sydney\Mag_Sydney-premium.html
+SK_holidays/tours\international-tours\asia\russia\Extravagance in Russia -6N 7D\Extravagance in Russia  premium.html
+SK_holidays/tours\international-tours\asia\singapore\Magical Singapore\Magical Singapore.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Idyllic Iceland\Idylic Iceland standard.php
+SK_holidays/tours\international-tours\asia\singapore\Magical Singapore\Magical Singapore.html
+SK_holidays/tours\international-tours\europe\europe\Europe - Idyllic Iceland\Idylic Iceland standard.html
+SK_holidays/tours\international-tours\europe\europe\Europe - Idyllic Iceland\Idylic Iceland premium.php
+SK_holidays/tours\international-tours\asia\singapore\Magical Singapore\Magical Singapore standard.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Idyllic Iceland\Idylic Iceland premium.html
+SK_holidays/tours\international-tours\asia\singapore\Magical Singapore\Magical Singapore standard.html
+SK_holidays/tours\international-tours\asia\kazakhstan\Kazhakasthan_Almaty\Thailand with Phuket Krabi.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Idyllic Iceland\Idylic Iceland basic.php
+SK_holidays/tours\international-tours\asia\singapore\Magical Singapore\Magical Singapore premium.php
+SK_holidays/tours\international-tours\asia\kazakhstan\Kazhakasthan_Almaty\Thailand with Phuket Krabi.html
+SK_holidays/tours\international-tours\asia\singapore\Magical Singapore\Magical Singapore premium.html
+SK_holidays/tours\international-tours\asia\kazakhstan\Kazhakasthan_Almaty\Thailand with Phuket Krabi standard.php
+SK_holidays/tours\international-tours\europe\europe\Europe - Idyllic Iceland\Idylic Iceland basic.html
+SK_holidays/tours\international-tours\asia\kazakhstan\Kazhakasthan_Almaty\Thailand with Phuket Krabi standard.html
+SK_holidays/tours\international-tours\asia\kazakhstan\Kazhakasthan_Almaty\Thailand with Phuket Krabi premium.php
+SK_holidays/tours\international-tours\asia\kazakhstan\Kazhakasthan_Almaty\Thailand with Phuket Krabi premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives-Medhufushi Island Resort\Medhufushi Island Resort standard.php
+SK_holidays/tours\international-tours\australia\australia\Amazing_sydney\Amazing_Australia.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives-Medhufushi Island Resort\Medhufushi Island Resort standard.html
+SK_holidays/tours\international-tours\australia\australia\Amazing_sydney\Amazing_Australia.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Palm Beach Hotel\palm beach hotel standard.php
+SK_holidays/tours\international-tours\asia\azerbaijan\Azerbaijan_Baku\Thailand with Phuket Krabi.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives-Medhufushi Island Resort\Medhufushi Island Resort premium.php
+SK_holidays/tours\international-tours\australia\australia\Amazing_sydney\Amazing_Australia-standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Palm Beach Hotel\palm beach hotel standard.html
+SK_holidays/tours\international-tours\asia\azerbaijan\Azerbaijan_Baku\Thailand with Phuket Krabi premium.php
+SK_holidays/tours\international-tours\asia\azerbaijan\Azerbaijan_Baku\Thailand with Phuket Krabi.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives-Medhufushi Island Resort\Medhufushi Island Resort premium.html
+SK_holidays/tours\international-tours\australia\australia\Amazing_sydney\Amazing_Australia-standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Palm Beach Hotel\palm beach hotel premium.php
+SK_holidays/tours\international-tours\asia\azerbaijan\Azerbaijan_Baku\Thailand with Phuket Krabi standard.php
+SK_holidays/tours\international-tours\asia\azerbaijan\Azerbaijan_Baku\Thailand with Phuket Krabi premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives-Medhufushi Island Resort\Medhufushi Island Resort basic.php
+SK_holidays/tours\international-tours\australia\australia\Amazing_sydney\Amazing_Australia-premium.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Palm Beach Hotel\palm beach hotel premium.html
+SK_holidays/tours\international-tours\australia\australia\Amazing_sydney\Amazing_Australia-premium.html
+SK_holidays/tours\international-tours\asia\azerbaijan\Azerbaijan_Baku\Thailand with Phuket Krabi standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives-Medhufushi Island Resort\Medhufushi Island Resort basic.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Palm Beach Hotel\palm beach hotel basic.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Palm Beach Hotel\palm beach hotel basic.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Hotel\Dubai Hotel standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu Dhabi City Tour\Abu Dhabi city standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Hotel\Dubai Hotel standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Burj Kaif\Burj Kaif standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Holiday Inn Kandooma\Holiday Inn Kandooma standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Odyssey\Dubai Odyssey standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu Dhabi City Tour\Abu Dhabi city standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Burj Kaif\Burj Kaif standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Hotel\Dubai Hotel premium.php
+SK_holidays/tours\international-tours\europe\egypt\Egypt 7N 8D\Egypt 7N 8D.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu Dhabi City Tour\Abu Dhabi city premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Holiday Inn Kandooma\Holiday Inn Kandooma standard.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Amazing 4N Hong Kong and 2N Macau\Hongkong-Amazing 4N Hong Kong and 2N Macau Premium.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Odyssey\Dubai Odyssey standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Burj Kaif\Burj Kaif premium.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Vibrant 3N Hong Kong and 2N Macau\Vibrant 3N Hong Kong and 2N Macau standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu Dhabi City Tour\Abu Dhabi city premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Holiday Inn Kandooma\Holiday Inn Kandooma premium.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Amazing 4N Hong Kong and 2N Macau\Hongkong-Amazing 4N Hong Kong and 2N Macau Premium.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 7N 8D\Egypt 7N 8D.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Burj Kaif\Burj Kaif premium.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Vibrant 3N Hong Kong and 2N Macau\Vibrant 3N Hong Kong and 2N Macau standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Odyssey\Dubai Odyssey premium.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Hotel\Dubai Hotel premium.html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Kuala Lumpur and Genting – 3Nights  4Days\Kuala Lumpur and Genting  standard.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Vibrant 3N Hong Kong and 2N Macau\Vibrant 3N Hong Kong and 2N Macau Premium.php
+SK_holidays/tours\international-tours\europe\egypt\Egypt 7N 8D\Egypt 7N 8D standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Holiday Inn Kandooma\Holiday Inn Kandooma premium.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Amazing 4N Hong Kong and 2N Macau\Amazing 4N Hong Kong and 2N Macau Standard.php
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Ipoh and Kuala Lumpur – 4Nights  5Days\Ipoh and Kuala Lumpur  standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Odyssey\Dubai Odyssey premium.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Hotel\Dubai Hotel basic.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Vibrant 3N Hong Kong and 2N Macau\Vibrant 3N Hong Kong and 2N Macau Premium.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu Dhabi City Tour\Abu Dhabi city basic.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Amazing 4N Hong Kong and 2N Macau\Amazing 4N Hong Kong and 2N Macau Standard.html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Ipoh and Kuala Lumpur – 4Nights  5Days\Ipoh and Kuala Lumpur  standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Holiday Inn Kandooma\Holiday Inn Kandooma basic.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Burj Kaif\Burj Kaif basic.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Hotel\Dubai Hotel basic.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Odyssey\Dubai Odyssey basic.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Vibrant 3N Hong Kong and 2N Macau\Vibrant 3N Hong Kong and 2N Macau basic .php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu Dhabi City Tour\Abu Dhabi city basic.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Amazing 4N Hong Kong and 2N Macau\Amazing 4N Hong Kong and 2N Macau basic.php
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Ipoh and Kuala Lumpur – 4Nights  5Days\Ipoh and Kuala Lumpur  premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Holiday Inn Kandooma\Holiday Inn Kandooma basic.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Odyssey\Dubai Odyssey basic.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Amazing 4N Hong Kong and 2N Macau\Amazing 4N Hong Kong and 2N Macau basic.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Vibrant 3N Hong Kong and 2N Macau\Vibrant 3N Hong Kong and 2N Macau basic .html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Ipoh and Kuala Lumpur – 4Nights  5Days\Ipoh and Kuala Lumpur  basic.php
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Ipoh and Kuala Lumpur – 4Nights  5Days\Ipoh and Kuala Lumpur  premium.html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Ipoh and Kuala Lumpur – 4Nights  5Days\Ipoh and Kuala Lumpur  basic.html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Kuala Lumpur and Genting – 3Nights  4Days\Kuala Lumpur and Genting  basic.php
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Kuala Lumpur and Genting – 3Nights  4Days\Kuala Lumpur and Genting  premium.html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Kuala Lumpur and Genting – 3Nights  4Days\Kuala Lumpur and Genting  premium.php
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Kuala Lumpur and Genting – 3Nights  4Days\Kuala Lumpur and Genting  standard.html
+SK_holidays/tours\international-tours\asia\malaysia\Malaysia - Kuala Lumpur and Genting – 3Nights  4Days\Kuala Lumpur and Genting  basic.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Burj Kaif\Burj Kaif basic.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 7N 8D\Egypt 7N 8D standard.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 7N 8D\Egypt 7N 8D premium.php
+SK_holidays/tours\international-tours\europe\egypt\Egypt 7N 8D\Egypt 7N 8D premium.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu dhabi\Abu Dhabi standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fushifaru Maladives\Fushifaru Maladives standard.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Spectacular Hong Kong with Disneyland\Spectacular Hong Kong with Disneyland standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu dhabi\Abu Dhabi standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fushifaru Maladives\Fushifaru Maladives standard.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Spectacular Hong Kong with Disneyland\Spectacular Hong Kong with Disneyland standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu dhabi\Abu Dhabi premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fushifaru Maladives\Fushifaru Maladives premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Adaaran Club\Adaaran standard.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Spectacular Hong Kong with Disneyland\Spectacular Hong Kong with Disneyland Premium.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu dhabi\Abu Dhabi premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fushifaru Maladives\Fushifaru Maladives premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Adaaran Club\Adaaran standard.html
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu dhabi\Abu Dhabi basic.php
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Spectacular Hong Kong with Disneyland\Spectacular Hong Kong with Disneyland Premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fushifaru Maladives\Fushifaru Maladives basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Adaaran Club\Adaaran premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fun Island Resort\fun Island Resort premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - The Sun Siyam Irufushi\The Sun Siyam Irufushi  standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Club Rannalhi\Adaaran Club Rannalhi standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fushifaru Maladives\Fushifaru Maladives basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Kuramathi\Kuramathi standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Bandos\Bandos standard.php
+SK_holidays/tours\international-tours\asia\dubai-UAF\Dubai Abu dhabi\Abu Dhabi basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - The Sun Siyam Irufushi\The Sun Siyam Irufushi  standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fun Island Resort\fun Island Resort premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Adaaran Club\Adaaran premium.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Spectacular Hong Kong with Disneyland\Spectacular Hong Kong with Disneyland basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Kuramathi\Kuramathi standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Club Rannalhi\Adaaran Club Rannalhi standard.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 4N 5D\Egypt 4N 5D standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - The Sun Siyam Irufushi\The Sun Siyam Irufushi  premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Adaaran Club\Adaaran basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Bandos\Bandos standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fun Island Resort\fun Island Resort  standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Club Rannalhi\Adaaran Club Rannalhi premium.php
+SK_holidays/tours\international-tours\europe\egypt\Egypt 4N 5D\Egypt 4N 5D.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Kuramathi\Kuramathi premium.php
+SK_holidays/tours\international-tours\europe\egypt\Egypt 4N 5D\Egypt 4N 5D premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - The Sun Siyam Irufushi\The Sun Siyam Irufushi  premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Bandos\Bandos premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fun Island Resort\fun Island Resort  standard.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 4N 5D\Egypt 4N 5D.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Club Rannalhi\Adaaran Club Rannalhi premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Adaaran Club\Adaaran basic.html
+SK_holidays/tours\international-tours\asia\hong-kong\Hongkong-Spectacular Hong Kong with Disneyland\Spectacular Hong Kong with Disneyland basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - The Sun Siyam Irufushi\The Sun Siyam Irufushi  basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Kuramathi\Kuramathi premium.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 4N 5D\Egypt 4N 5D premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fun Island Resort\fun Island Resort  basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Club Rannalhi\Adaaran Club Rannalhi basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Club Rannalhi\Adaaran Club Rannalhi basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - The Sun Siyam Irufushi\The Sun Siyam Irufushi  basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Kuramathi\Kuramathi basic`.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Bandos\Bandos premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Fun Island Resort\fun Island Resort  basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives - Kuramathi\Kuramathi basic`.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Bandos\Bandos basic.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Bandos\Bandos basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Select Hudhuranfushi\Adaaran Select Hudhuranfushi basic.html
+SK_holidays/tours\international-tours\europe\egypt\Egypt 4N 5D\Egypt 4N 5D standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Select Hudhuranfushi\Adaaran Select Hudhuranfushi  standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Select Hudhuranfushi\Adaaran Select Hudhuranfushi  standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Select Hudhuranfushi\Adaaran Select Hudhuranfushi premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Select Hudhuranfushi\Adaaran Select Hudhuranfushi basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Adaaran Select Hudhuranfushi\Adaaran Select Hudhuranfushi premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Coconut Tree Hulhuvilla Inn\Coconut Teee Hulhuvillla standard.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Coconut Tree Hulhuvilla Inn\Coconut Teee Hulhuvillla standard.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Coconut Tree Hulhuvilla Inn\Coconut Teee Hulhuvillla premium.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Coconut Tree Hulhuvilla Inn\Coconut Teee Hulhuvillla premium.html
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Coconut Tree Hulhuvilla Inn\Coconut Teee Hulhuvillla basic.php
+SK_holidays/tours\international-tours\asia\maldives\Maldives- Coconut Tree Hulhuvilla Inn\Coconut Teee Hulhuvillla basic.html

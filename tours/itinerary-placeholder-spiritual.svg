@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Spiritual itinerary placeholder</title>
+  <desc id="desc">A spiritual themed placeholder image for pilgrimage itinerary pages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5a3418"/>
+      <stop offset="54%" stop-color="#a55f22"/>
+      <stop offset="100%" stop-color="#f5cf84"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1240" cy="175" r="92" fill="#fff5db"/>
+  <path d="M0 710 C170 650 290 620 430 626 C560 632 676 700 785 704 C930 710 1060 616 1210 620 C1370 624 1488 700 1600 760 L1600 900 L0 900 Z" fill="#6a3a17" fill-opacity="0.56"/>
+  <path d="M0 770 L120 730 L250 760 L386 628 L506 780 L628 680 L738 786 L862 650 L985 792 L1116 612 L1260 796 L1366 700 L1600 818 L1600 900 L0 900 Z" fill="#4c250d" fill-opacity="0.86"/>
+  <g transform="translate(104 118)">
+    <rect width="700" height="270" rx="36" fill="#ffffff" fill-opacity="0.13" stroke="#ffffff" stroke-opacity="0.24"/>
+    <text x="48" y="76" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="600" fill="#fff8ef" letter-spacing="5">GRAND SK HOLIDAYS</text>
+    <text x="48" y="156" font-family="Poppins, Arial, sans-serif" font-size="82" font-weight="700" fill="#ffffff">Spiritual Journey</text>
+    <text x="48" y="220" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="400" fill="#fff4de">Use your temple, mountain or yatra banner image here.</text>
+  </g>
+  <g transform="translate(1180 510)">
+    <circle cx="120" cy="120" r="118" fill="#ffffff" fill-opacity="0.1"/>
+    <path d="M120 36 C140 76 188 110 188 170 C188 214 157 252 120 252 C83 252 52 214 52 170 C52 110 100 76 120 36 Z" fill="#fff2d0"/>
+    <rect x="110" y="118" width="20" height="106" rx="10" fill="#d4812e"/>
+    <path d="M120 78 C132 104 154 122 154 154 C154 180 138 198 120 198 C102 198 86 180 86 154 C86 122 108 104 120 78 Z" fill="#ffb347"/>
+  </g>
+  <g transform="translate(112 654)">
+    <rect width="458" height="120" rx="26" fill="#ffffff" fill-opacity="0.15"/>
+    <text x="34" y="54" font-family="Poppins, Arial, sans-serif" font-size="27" font-weight="600" fill="#ffffff">Suggested use</text>
+    <text x="34" y="92" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="400" fill="#fff8ef">Pilgrimage and temple itinerary banner slot</text>
+  </g>
+</svg>

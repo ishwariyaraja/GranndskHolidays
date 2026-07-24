@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials | GRAND SK Holidays</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Your Menu CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="../sk.css"> -->
+   <style>
+    :root {
+    --primary-color: #034295;
+    --secondary-color: #ffaa02;
+    --accent-color: #00d4aa;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), #0052CC);
+    --gradient-secondary: linear-gradient(135deg, var(--secondary-color), #ff8c00);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-light);
+    min-height: 100vh;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+/* Side Button */
+.testimonial-btn {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: var(--gradient-secondary);
+    color: var(--white);
+    padding: 22px 12px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    cursor: pointer;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    border: none;
+    font-family: inherit;
+    box-shadow: -4px 0 16px rgba(255,170,2,0.35);
+    transition: var(--transition);
+    z-index: 9999;
+}
+
+.testimonial-btn:hover {
+    padding-right: 16px;
+    box-shadow: -6px 0 20px rgba(255,170,2,0.45);
+}
+   </style>
+    <style>
+
+    /* SIDE BUTTON */
+
+    .sk-open-btn{
+      position:fixed;
+      top:50%;
+      right:0;
+      transform:translateY(-20%);
+      background:linear-gradient(135deg,#007bff,#003399);
+      color:#fff;
+      border:none;
+      padding:18px 12px;
+      cursor:pointer;
+      font-size:16px;
+      font-weight:bold;
+      border-radius:12px 0 0 12px;
+      writing-mode:vertical-rl;
+      text-orientation:mixed;
+      z-index:1000;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .sk-open-btn:hover{
+      padding-right:15px;
+    }
+
+    /* CONTACT CARD */
+
+    .sk-contact-side{
+      position:fixed;
+      top:50%;
+      right:-400px;
+      transform:translateY(-50%);
+      width:340px;
+      background:#fff;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      transition:0.5s ease;
+      z-index:999;
+    }
+
+    .sk-contact-side.sk-active{
+      right:20px;
+    }
+
+    /* HEADER */
+
+    .sk-contact-header{
+      background:linear-gradient(135deg,#003399,#0f4c81);
+      color:#fff;
+      padding:25px 20px;
+      text-align:center;
+      position:relative;
+    }
+
+    .sk-contact-header h2{
+      font-size:24px;
+      margin-bottom:10px;
+    }
+
+    .sk-contact-header p{
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    /* CLOSE BUTTON */
+
+    .sk-close-btn{
+      position:absolute;
+      top:12px;
+      right:15px;
+      width:32px;
+      height:32px;
+      border:none;
+      border-radius:50%;
+      background:#fff;
+      color:#0f4c81;
+      cursor:pointer;
+      font-size:18px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .sk-close-btn:hover{
+      background:red;
+      color:#fff;
+    }
+
+    /* BODY */
+
+    .sk-contact-body{
+      padding:20px;
+    }
+
+    .sk-info-box{
+      display:flex;
+      gap:15px;
+      /* margin-bottom:20px; */
+      align-items:flex-start;
+    }
+
+    .sk-info-box i{
+      width:45px;
+      height:45px;
+      background:#1ea5fc;
+      color:#fff;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:18px;
+      flex-shrink:0;
+    }
+
+    .sk-info-text h4{
+      margin-bottom:5px;
+      color:#222;
+      font-size:16px;
+    }
+
+    .sk-info-text p,
+    .sk-info-text a{
+      color:#555;
+      text-decoration:none;
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .sk-info-text a:hover{
+      color:#1ea5fc;
+    }
+
+    /* BUTTON */
+
+    .sk-contact-btn{
+      display:block;
+      width:100%;
+      text-align:center;
+      text-decoration:none;
+      background:linear-gradient(135deg,#003399,#1ea5fc);
+      color:#fff;
+      padding:14px;
+      border-radius:10px;
+      font-weight:bold;
+      transition:0.3s;
+      margin-top:10px;
+    }
+
+    .sk-contact-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(30,165,252,0.3);
+    }
+
+    /* MOBILE */
+
+    @media(max-width:480px){
+      .sk-open-btn{
+        top:60%;
+        padding:14px 9px;
+        font-size:14px;
+        border-radius:10px 0 0 10px;
+      }
+
+      .sk-contact-side{
+        width:90%;
+      }
+
+      .sk-contact-side.sk-active{
+        right:5%;
+      }
+
+    }
+
+  </style> 
+  <style>
+    :root {
+      --blue: #034295;
+      --gold: #ffaa02;
+      --ink: #1f2a3d;
+      --muted: #6c7888;
+      --line: #dfe7f0;
+      --soft: #f5f8fc;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(3, 66, 149, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(255, 170, 2, 0.12), transparent 28%),
+        linear-gradient(180deg, #f4f8fd 0%, #ffffff 36%, #edf4fb 100%);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 8px 24px rgba(3, 66, 149, 0.06);
+    }
+
+    .header-inner {
+      padding: 12px clamp(18px, 5vw, 64px);
+    }
+
+    .site-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--blue);
+    }
+
+    .site-brand img {
+      width: 190px;
+      max-width: 42vw;
+      background: #034295;
+      object-fit: contain;
+    }
+
+    .site-brand span {
+      white-space: nowrap;
+    }
+
+    .site-header .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .site-header .nav-link {
+      padding: 0.72rem 1rem;
+      border-radius: 999px;
+      color: var(--ink);
+      font-weight: 800;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .site-header .nav-link:hover,
+    .site-header .nav-link:focus {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .site-header .nav-cta {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .site-header .nav-cta:hover,
+    .site-header .nav-cta:focus {
+      background: #022f68;
+      color: var(--white);
+    }
+
+    .navbar-toggler {
+      background: var(--blue);
+      border-color: rgba(3, 66, 149, 0.2);
+    }
+
+    .navbar-toggler-icon {
+      filter: invert(1) brightness(200%);
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(3, 66, 149, 0.15);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      gap: 28px;
+      align-items: center;
+      padding: clamp(42px, 7vw, 86px) clamp(18px, 5vw, 64px);
+      background:
+        linear-gradient(135deg, rgba(3, 66, 149, 0.88), rgba(3, 66, 149, 0.58)),
+        url("../Bestselling/dubai.jpg") center/cover;
+      color: var(--white);
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 0 0 16px;
+      font-size: clamp(2.1rem, 5vw, 4.8rem);
+      line-height: 1.02;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.8;
+    }
+
+    .score-card {
+      justify-self: end;
+      width: min(100%, 320px);
+      padding: 26px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+
+    .score-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .stars {
+      margin: 12px 0 6px;
+      color: var(--gold);
+      letter-spacing: 3px;
+    }
+
+    .section {
+      padding: clamp(34px, 5vw, 64px) clamp(18px, 5vw, 64px);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+
+    .kicker {
+      margin: 0 0 7px;
+      color: var(--gold);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-size: 0.78rem;
+    }
+
+    .section h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(1.5rem, 2vw, 2.35rem);
+    }
+
+    .counter {
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .carousel-card {
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .stage {
+      position: relative;
+      aspect-ratio: 16 / 8;
+      display: grid;
+      place-items: center;
+      background: #101826;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .stage img,
+    .stage video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .carousel-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .arrow-btn {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+      color: var(--blue);
+      font-size: 1.5rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .arrow-btn:hover {
+      background: var(--blue);
+      color: var(--white);
+      transform: translateY(-1px);
+    }
+
+    .slide-name {
+      flex: 1;
+      min-width: 0;
+      color: var(--muted);
+      font-weight: 700;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .photo-grid,
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .photo-card,
+    .review-card {
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(31, 42, 61, 0.08);
+    }
+
+    .photo-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-card figcaption {
+      padding: 12px 14px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .review-card {
+      padding: 22px;
+    }
+
+    .review-card p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .review-profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .empty-state {
+      padding: 42px 20px;
+      text-align: center;
+    }
+
+    .site-footer {
+      margin-top: 10px;
+      background: linear-gradient(180deg, #061427 0%, #081e38 100%);
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .footer-top {
+      padding: clamp(36px, 6vw, 64px) clamp(18px, 5vw, 64px);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr) minmax(0, 0.9fr);
+      gap: 28px;
+    }
+
+    .footer-card h3 {
+      margin: 0 0 14px;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+
+    .footer-card p {
+      margin: 0 0 16px;
+      line-height: 1.8;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .footer-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: min(100%, 260px);
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .footer-button:hover {
+      background: #022f68;
+      transform: translateY(-1px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 14px clamp(18px, 5vw, 64px);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-bottom strong {
+      color: var(--white);
+    }
+
+    .footer-bottom .highlight {
+      color: var(--gold);
+    }
+
+    .button,
+    .btn,
+    .btn-primary {
+      background-color: var(--blue);
+      border-color: var(--blue);
+      color: var(--white);
+    }
+
+    .btn:hover,
+    .btn-primary:hover {
+      background-color: #022f68;
+      border-color: #022f68;
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .photo-grid,
+      .reviews,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .score-card {
+        justify-self: start;
+      }
+
+      .section-head,
+      .site-header .navbar-collapse {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .site-header .navbar-nav {
+        flex-wrap: wrap;
+      }
+
+      .stage {
+        aspect-ratio: 16 / 11;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .header-inner {
+        padding-inline: 14px;
+      }
+
+      .site-brand img {
+        width: 150px;
+      }
+
+      .section,
+      .hero,
+      .footer-top,
+      .footer-bottom {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .carousel-bar {
+        flex-direction: column;
+      }
+
+      .arrow-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+ <!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" >
+             <a class="navbar-brand" href="#" id="navbarmenu">
+                <img src="../SK.png" alt="Logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li> <li class="nav-item ">
+  <a class="nav-link dropdown" href="../group-tour/new/public/packages.php" id="groupDropdown" role="button">
+    Group
+  </a>
+</li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tours
+                        </a>
+                         <div class="dropdown-menu">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <!-- Domestic Tours Section -->
+                                    <div class="col-lg-6">
+                                        <div class="menu-section">
+                                            <h6>Domestic Tours</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="region">
+                                                        <h6>North India</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/domestic-tours/north-india/amritsar/index.html">Amritsar</a></li>
+                                                            <li><a href="../tours/domestic-tours/north-india/jammu-and-kashmir/index.html">Kashmir</a></li>
+                                                            <li><a href="../tours/domestic-tours/north-india/leh-ladakh/index.html">Leh Ladakh</a></li>
+                                                            <!--<li><a href="../tours/domestic-tours/north-india/jaipur/index.html">Jaipur</a></li>-->
+                                                            <!--<li><a href="../tours/domestic-tours/north-india/jaisalmer/index.html">Jaisalmer</a></li>-->
+                                                            <li><a href="../tours/domestic-tours/north-india/rajasthan/index.html">Rajasthan</a></li>
+                                                            <li><a href="../tours/domestic-tours/north-india/golden-triangle/index.html">Golden Triangle</a></li>
+                                                            <li><a href="../tours/domestic-tours/north-india/delhi-and-agra/index.html">Delhi & Agra</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="region">
+                                                        <h6>East India</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/domestic-tours/east-india/kolkata/index.html">Kolkata</a></li>
+                                                            <li><a href="../tours/domestic-tours/east-india/darjeeling-and-sikkim/index.html">Gangtok & Darjeeling</a></li>
+                                                            <li><a href="../tours/domestic-tours/east-india/7-sisters/index.html">7 Sisters</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="region">
+                                                        <h6>West India</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/domestic-tours/west-india/goa/index.html">Goa</a></li>
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                    <div class="region">
+                                                        <h6>South India</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/domestic-tours/south-india/kerala/index.html">Kerala</a></li>
+                                                            <li><a href="../tours/domestic-tours/south-india/coorg/index.html">Coorg</a></li>
+                                                            <!--<li><a href="#">Lakshadweep</a></li>-->
+                                                            <li><a href="../tours/domestic-tours/south-india/andaman/index.html">Andaman</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- International Tours Section -->
+                                    <div class="col-lg-6">
+                                        <div class="menu-section">
+                                            <h6>International Tours</h6>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="region">
+                                                        <h6>Asia</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/international-tours/asia/azerbaijan/index.html">Azerbaijan</a></li>
+                                                            <!--<li><a href="#">Bali (Indonesia)</a></li>-->
+                                                            <li><a href="../tours/international-tours/asia/dubai-UAF/index.html">Dubai (UAE)</a></li>
+                                                            <li><a href="../tours/international-tours/asia/hong-kong/index.html">Hong Kong</a></li>
+                                                             <li><a href="../tours/international-tours/asia/russia/index.html">Russia</a></li>
+                                                            <li><a href="../tours/international-tours/asia/maldives/index.html">Maldives</a></li>
+                                                            <li><a href="../tours/international-tours/asia/malaysia/index.html">Malaysia</a></li>
+                                                            <!--<li><a href="#">Philippines</a></li>-->
+                                                            <li><a href="../tours/international-tours/asia/singapore/index.html">Singapore</a></li>
+                                                            <li><a href="../tours/international-tours/asia/sri-lanka/index.html">Sri Lanka</a></li>
+                                                            <li><a href="../tours/international-tours/asia/thailand/index.html">Thailand</a></li>
+                                                            <!--<li><a href="#">Vietnam</a></li>-->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="region">
+                                                        <h6>Europe</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/international-tours/europe/europe/index.html">Europe</a></li>
+                                                              <li><a href="../tours/international-tours/europe/egypt/index.html">Egypt</a></li>
+                                                            <!--<li><a href="#">London (UK)</a></li>-->
+                                                        </ul>
+                                                    </div>
+                                                    <div class="region">
+                                                        <h6>Africa</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/international-tours/Africa/mauritius/index.html">Mauritius</a></li>
+                                                            <li><a href="../tours/international-tours/Africa/seychelles/index.html">Seychelles</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="region">
+                                                        <h6>Australia</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/international-tours/australia/australia/index.html">Australia</a></li>
+                                                             <li><a href="../tours/international-tours/australia/newzland/index.html">NewZealand</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="region">
+                                                        <h6>North America</h6>
+                                                        <ul>
+                                                            <li><a href="../tours/international-tours/north-america/united/index.html">United States</a></li>
+                                                            <!--<li><a href="#">Canada</a></li>-->
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="../spiritual/index.html">Spiritual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../honeymoon-tour/index.html">Honeymoon</a>
+                
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../crusie/index.html">Cruise</a>
+                        </li>
+                                               <li class="nav-item">
+    <a class="nav-link" href="../testimonial/index.html">Testimonials</a>
+</li>    
+                <!-- <li class="nav-custom-item custom-dropdown">
+ <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Travel Support
+                        </a>
+  <ul class="custom-dropdown-menu" aria-labelledby="travelSupportToggle">
+    <li><a class="custom-dropdown-link" href="../travel support/air-ticket/index.html">Air Ticket</a></li>
+    <li><a class="custom-dropdown-link" href="../travel support/visa/index.html">Visa</a></li>
+    <li><a class="custom-dropdown-link" href="../travel support/passport/index.html">Passport</a></li>
+  </ul>
+</li> -->
+ <li class="nav-item">
+                      
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+ </nav>
+ 
+   <button class="sk-open-btn" id="skOpenBtn">
+    Contact Us
+  </button>
+  <div class="sk-contact-side" id="skContactCard">
+
+    <div class="sk-contact-header">
+
+      <button class="sk-close-btn" id="skCloseBtn">
+        &times;
+      </button>
+
+      <h2>GRAND SK Holidays Pvt Ltd</h2>
+
+      <p>
+        Your trusted travel companion for unforgettable journeys 
+        and amazing experiences worldwide.
+      </p>
+
+    </div>
+
+    <div class="sk-contact-body">
+
+      <div class="sk-info-box">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <div class="sk-info-text">
+          <h4>Our Branches</h4>
+          <p>Trichy | Perambalur | Thuraiyur</p>
+        </div>
+
+      </div>
+
+      <div class="sk-info-box">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <div class="sk-info-text">
+          <h4>Call Us</h4>
+
+          <a href="tel:+917200449904">
+            +91 72004 49904
+          </a>
+        </div>
+
+      </div>
+
+      <div class="sk-info-box">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <div class="sk-info-text">
+          <h4>Email</h4>
+
+          <a href="mailto:sales@grandskholidays.com">
+            sales@grandskholidays.com
+          </a>
+        </div>
+
+      </div>
+
+      <a href="../bookingform.php" class="sk-contact-btn">
+        Book Your Trip Now
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <header class="hero">
+    <div>
+      <p class="kicker">Customer stories</p>
+      <h1>GRAND SK Holidays Testimonials</h1>
+      <p>Published photos and videos from the admin dashboard appear here automatically in this browser.</p>
+    </div>
+    <aside class="score-card">
+      <strong>4.9</strong>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <span>Trusted by happy travellers</span>
+    </aside>
+  </header>
+
+  <main>
+    <section class="section" id="videos">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Video carousel</p>
+          <h2>Travel moments from our guests</h2>
+        </div>
+        <span class="counter" id="videoCounter">0 videos</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="stage" id="videoStage">
+          <div class="empty-state">No published videos yet.</div>
+        </div>
+        <div class="carousel-bar">
+          <button class="arrow-btn" type="button" data-video-prev aria-label="Previous video">&#8249;</button>
+          <span class="slide-name" id="videoLabel">Publish videos from dashboard</span>
+          <button class="arrow-btn" type="button" data-video-next aria-label="Next video">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="images">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Image carousel</p>
+          <h2>Smiles from recent trips</h2>
+        </div>
+        <span class="counter" id="imageCounter">0 images</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="stage" id="imageStage">
+          <div class="empty-state">No published images yet.</div>
+        </div>
+        <div class="carousel-bar">
+          <button class="arrow-btn" type="button" data-image-prev aria-label="Previous image">&#8249;</button>
+          <span class="slide-name" id="imageLabel">Publish images from dashboard</span>
+          <button class="arrow-btn" type="button" data-image-next aria-label="Next image">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Gallery</p>
+          <h2>Published photo gallery</h2>
+        </div>
+      </div>
+      <div class="photo-grid" id="photoGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Reviews</p>
+          <h2>What our travellers say</h2>
+        </div>
+      </div>
+      <div class="reviews">
+        <article class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>Dubai trip was perfectly organized. Premium hotels, smooth transfers, and quick support from the team.</p>
+          <div class="review-profile"><div class="avatar">RK</div><strong>Ravi Kumar</strong></div>
+        </article>
+        <article class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>Our family loved every moment. The resort suggestion, activities, and travel timing were handled beautifully.</p>
+          <div class="review-profile"><div class="avatar">PR</div><strong>Priya Rajan</strong></div>
+        </article>
+        <article class="review-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>The Kerala backwater trip was peaceful and well planned. Houseboat, food, and driver coordination were excellent.</p>
+          <div class="review-profile"><div class="avatar">SV</div><strong>Suresh Venkat</strong></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+ 
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Company Info -->
+     <div class="footer-section">
+        <h3><i class="fas fa-plane"></i> GRAND SK Holidays Pvt Ltd</h3>
+        <p>Your trusted travel companion for unforgettable journeys and amazing experiences worldwide.</p>
+        <div class="contact-info">
+           <div class="location-info">
+    <i class="fas fa-map-marker-alt"></i>
+    <span onclick="showLocation('trichy')" style="cursor: pointer;">Trichy</span> |
+    <span onclick="showLocation('perambalur')"style="cursor: pointer;">Perambalur</span> |
+    <span onclick="showLocation('thuraiyur')"style="cursor: pointer;">Thuraiyur</span>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="locationModal" class="location-popup">
+    <div class="location-popup-box">
+      <span class="location-close-btn" onclick="closeLocationPopup()">&times;</span>
+      <p id="locationText"></p>
+    </div>
+  </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+91 72004 49904</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>sales@grandskholidays.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3><i class="fas fa-link"></i> Quick Links</h3>
+        <ul class="footer-links">
+          <!-- <li><a href="#internationals"><i class="fas fa-chevron-right"></i> International Packages</a></li> -->
+          <!-- <li><a href="#domestics"><i class="fas fa-chevron-right"></i> Domestic Packages</a></li> -->
+          <li><a href="../honeymoon-tour/index.html"><i class="fas fa-chevron-right"></i> Honeymoon Packages</a></li>
+          <li><a href="../spiritual/index.html"><i class="fas fa-chevron-right"></i> Spiritual Tours</a></li>
+          <li><a href="../crusie/index.html"><i class="fas fa-chevron-right"></i> Cruise Packages</a></li>
+          <li>
+            <a href="#" onclick="document.getElementById('skOpenBtn').click(); return false;">
+              <i class="fas fa-chevron-right"></i> Contact Us
+            </a>
+          </li>
+          <li><a href="../testimonial/index.html"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-section">
+        <h3><i class="fas fa-paper-plane"></i> Newsletter</h3>
+        <p>Enquiry to get travel deals and updates!</p>
+        <div>
+          <!-- <input type="email" placeholder="Enter your email" class="email-input"> -->
+          <a href="../bookingform.php" class="subscribe-btn" style="display:inline-flex; align-items:center; justify-content:center; border-radius:20px; width:300px; text-decoration:none;">
+            Enquiry Form
+            <!-- <i class="fas fa-paper-plane"></i> -->
+          </a>
+          <br>
+        </div>
+        
+        <!-- Social Media -->
+        <div class="social-media">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/grandsk" target="_blank" class="social-link facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/grandsk.holidays/" target="_blank" class="social-link instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/917200449904" target="_blank" class="social-link whatsapp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; 2024 GRAND SK Holidays Pvt Ltd. All rights reserved.</p>
+        <p>Powered by <span class="highlight">Gurushasta Innotech</span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const STORAGE_KEY = "grandSkTestimonialMedia";
+    const fallbackImages = [
+      { name: "Dubai", url: "../Bestselling/dubai.jpg" },
+      { name: "Maldives", url: "../Bestselling/maldives.jpg" },
+      { name: "Kerala", url: "../image_45/Kerala.jpg" }
+    ];
+    const fallbackVideos = [
+      { name: "GRAND SK Travel", url: "../4791166-uhd_3840_2160_30fps.mp4" }
+    ];
+
+    let imageIndex = 0;
+    let videoIndex = 0;
+    let media = loadMedia();
+
+    function loadMedia() {
+      try {
+        const stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        return {
+          images: stored?.images?.length ? stored.images : fallbackImages,
+          videos: stored?.videos?.length ? stored.videos : fallbackVideos
+        };
+      } catch (error) {
+        return { images: fallbackImages, videos: fallbackVideos };
+      }
+    }
+
+    function renderImage() {
+      const stage = document.getElementById("imageStage");
+      const label = document.getElementById("imageLabel");
+      const counter = document.getElementById("imageCounter");
+      const items = media.images || [];
+
+      counter.textContent = `${items.length} images`;
+      if (!items.length) {
+        stage.innerHTML = `<div class="empty-state">No published images yet.</div>`;
+        label.textContent = "Publish images from dashboard";
+        return;
+      }
+
+      const item = items[imageIndex];
+      stage.innerHTML = `<img src="${item.url}" alt="${item.name || "Published testimonial image"}">`;
+      label.textContent = `${imageIndex + 1} / ${items.length} - ${item.name || "Published image"}`;
+    }
+
+    function renderVideo() {
+      const stage = document.getElementById("videoStage");
+      const label = document.getElementById("videoLabel");
+      const counter = document.getElementById("videoCounter");
+      const items = media.videos || [];
+
+      counter.textContent = `${items.length} videos`;
+      if (!items.length) {
+        stage.innerHTML = `<div class="empty-state">No published videos yet.</div>`;
+        label.textContent = "Publish videos from dashboard";
+        return;
+      }
+
+      const item = items[videoIndex];
+      stage.innerHTML = `<video src="${item.url}" controls muted playsinline></video>`;
+      label.textContent = `${videoIndex + 1} / ${items.length} - ${item.name || "Published video"}`;
+    }
+
+    function renderGallery() {
+      const grid = document.getElementById("photoGrid");
+      const items = media.images || [];
+      grid.innerHTML = items.map(item => `
+        <figure class="photo-card">
+          <img src="${item.url}" alt="${item.name || "Published testimonial image"}">
+          <figcaption>${item.name || "Published image"}</figcaption>
+        </figure>
+      `).join("");
+    }
+
+    function moveImage(direction) {
+      const total = media.images.length;
+      if (!total) return;
+      imageIndex = (imageIndex + direction + total) % total;
+      renderImage();
+    }
+
+    function moveVideo(direction) {
+      const total = media.videos.length;
+      if (!total) return;
+      videoIndex = (videoIndex + direction + total) % total;
+      renderVideo();
+    }
+
+    document.querySelector("[data-image-prev]").addEventListener("click", () => moveImage(-1));
+    document.querySelector("[data-image-next]").addEventListener("click", () => moveImage(1));
+    document.querySelector("[data-video-prev]").addEventListener("click", () => moveVideo(-1));
+    document.querySelector("[data-video-next]").addEventListener("click", () => moveVideo(1));
+
+    renderVideo();
+    renderImage();
+    renderGallery();
+  </script>
+  <script>
+  
+    const skOpenBtn = document.getElementById("skOpenBtn");
+    const skCloseBtn = document.getElementById("skCloseBtn");
+    const skContactCard = document.getElementById("skContactCard");
+
+    // OPEN CARD
+
+    skOpenBtn.addEventListener("click", function(){
+
+      skContactCard.classList.add("sk-active");
+
+    });
+
+    // CLOSE CARD
+
+    skCloseBtn.addEventListener("click", function(){
+
+      skContactCard.classList.remove("sk-active");
+
+    });
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

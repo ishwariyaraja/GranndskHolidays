@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Dashboard | GRAND SK Holidays</title>
+  <link rel="icon" type="image/png" href="../../favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="dashboard-body">
+  <div class="admin-shell">
+    <aside class="admin-sidebar">
+      <div class="sidebar-logo">
+        <img src="../../SK.png" alt="GRAND SK Holidays logo" style="background-color: blue;">
+        <div>
+          <strong>GRAND SK</strong>
+          <span>Admin Profile</span>
+        </div>
+      </div>
+      <nav class="admin-menu">
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="../index.html">Testimonials</a>
+        <a href="../../index.html">Website</a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <header class="dashboard-header">
+        <div>
+          <h1>Testimonial Media Dashboard</h1>
+          <p class="dashboard-subtitle">Add multiple images and videos, preview as carousel, then publish to testimonial page.</p>
+        </div>
+        <div class="dashboard-actions">
+          <a class="admin-link-btn" href="../index.html">View Testimonial</a>
+          <button class="clear-btn" type="button" data-clear-media>Clear Published</button>
+          <a class="logout-btn" href="login.html">Logout</a>
+        </div>
+      </header>
+
+      <section class="media-grid">
+        <article class="media-panel">
+          <div class="panel-head">
+            <div>
+              <h2>Image Upload</h2>
+              <p>Choose multiple customer photos for the testimonial carousel.</p>
+            </div>
+            <span class="media-count" data-count="images">0 selected</span>
+          </div>
+
+          <label class="upload-box">
+            <input data-input="images" type="file" accept="image/*" multiple>
+            <span class="upload-icon">+</span>
+            <strong>Add Multiple Images</strong>
+            <span>JPG, PNG, WEBP supported</span>
+          </label>
+
+          <div class="media-controls">
+            <button class="preview-btn" type="button" data-preview="images">Preview</button>
+            <button class="publish-btn" type="button" data-publish="images">Publish Images</button>
+          </div>
+
+          <div class="carousel-frame">
+            <div class="carousel-stage" data-stage="images">
+              <div class="empty-state">Choose images and click Preview</div>
+            </div>
+            <div class="carousel-nav">
+              <button class="nav-icon-btn" type="button" data-move="images" data-direction="-1" aria-label="Previous image">&#8249;</button>
+              <span class="slide-label" data-label="images">No preview</span>
+              <button class="nav-icon-btn" type="button" data-move="images" data-direction="1" aria-label="Next image">&#8250;</button>
+            </div>
+          </div>
+          <p class="publish-status" data-status="images"></p>
+        </article>
+
+        <article class="media-panel">
+          <div class="panel-head">
+            <div>
+              <h2>Video Upload</h2>
+              <p>Choose multiple customer travel videos for carousel preview.</p>
+            </div>
+            <span class="media-count" data-count="videos">0 selected</span>
+          </div>
+
+          <label class="upload-box">
+            <input data-input="videos" type="file" accept="video/*" multiple>
+            <span class="upload-icon">+</span>
+            <strong>Add Multiple Videos</strong>
+            <span>MP4, MOV, WEBM supported</span>
+          </label>
+
+          <div class="media-controls">
+            <button class="preview-btn" type="button" data-preview="videos">Preview</button>
+            <button class="publish-btn" type="button" data-publish="videos">Publish Videos</button>
+          </div>
+
+          <div class="carousel-frame">
+            <div class="carousel-stage" data-stage="videos">
+              <div class="empty-state">Choose videos and click Preview</div>
+            </div>
+            <div class="carousel-nav">
+              <button class="nav-icon-btn" type="button" data-move="videos" data-direction="-1" aria-label="Previous video">&#8249;</button>
+              <span class="slide-label" data-label="videos">No preview</span>
+              <button class="nav-icon-btn" type="button" data-move="videos" data-direction="1" aria-label="Next video">&#8250;</button>
+            </div>
+          </div>
+          <p class="publish-status" data-status="videos"></p>
+        </article>
+      </section>
+
+      <p class="storage-note">Published media is saved in this browser. For very large videos, browser storage may reject the file; use smaller compressed videos for this frontend version.</p>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

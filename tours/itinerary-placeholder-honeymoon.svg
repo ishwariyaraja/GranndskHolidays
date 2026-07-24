@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Honeymoon itinerary placeholder</title>
+  <desc id="desc">A romantic placeholder image for honeymoon itinerary pages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a3651"/>
+      <stop offset="55%" stop-color="#cb6f7f"/>
+      <stop offset="100%" stop-color="#f7caa0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1238" cy="174" r="88" fill="#fff2df"/>
+  <path d="M0 735 C155 666 312 634 466 650 C638 668 788 754 934 748 C1088 742 1210 656 1380 650 C1468 646 1542 666 1600 694 L1600 900 L0 900 Z" fill="#8e4b5f" fill-opacity="0.42"/>
+  <path d="M0 802 L154 752 L298 802 L436 694 L590 818 L732 714 L860 826 L1010 692 L1164 830 L1302 728 L1440 812 L1600 760 L1600 900 L0 900 Z" fill="#5d253d" fill-opacity="0.72"/>
+  <g transform="translate(116 116)">
+    <rect width="724" height="272" rx="36" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.22"/>
+    <text x="48" y="74" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="600" fill="#fff8f7" letter-spacing="5">GRAND SK HOLIDAYS</text>
+    <text x="48" y="156" font-family="Poppins, Arial, sans-serif" font-size="82" font-weight="700" fill="#ffffff">Honeymoon Escape</text>
+    <text x="48" y="220" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="400" fill="#fff4f2">Add your beach, resort or couple destination banner here.</text>
+  </g>
+  <g transform="translate(1176 494)">
+    <path d="M124 92 C160 44 232 54 248 120 C264 186 206 230 124 300 C42 230 -16 186 0 120 C16 54 88 44 124 92 Z" fill="#fff0ef" fill-opacity="0.92"/>
+    <path d="M124 126 C144 98 184 104 194 140 C204 176 172 204 124 248 C76 204 44 176 54 140 C64 104 104 98 124 126 Z" fill="#e27c87"/>
+  </g>
+  <g transform="translate(112 650)">
+    <rect width="470" height="120" rx="26" fill="#ffffff" fill-opacity="0.15"/>
+    <text x="34" y="54" font-family="Poppins, Arial, sans-serif" font-size="27" font-weight="600" fill="#ffffff">Suggested use</text>
+    <text x="34" y="92" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="400" fill="#fff7f6">Romantic resort and getaway itinerary hero slot</text>
+  </g>
+</svg>

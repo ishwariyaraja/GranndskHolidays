@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tour itinerary placeholder</title>
+  <desc id="desc">A calm travel themed placeholder image for tour itinerary pages.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#103a60"/>
+      <stop offset="58%" stop-color="#2f83b0"/>
+      <stop offset="100%" stop-color="#f1c36c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1250" cy="170" r="88" fill="#fff2cb"/>
+  <path d="M0 655 L180 520 L370 610 L560 455 L730 610 L955 430 L1170 645 L1380 505 L1600 645 L1600 900 L0 900 Z" fill="#123858" fill-opacity="0.58"/>
+  <path d="M0 740 L220 610 L410 700 L575 565 L760 735 L980 560 L1195 740 L1390 640 L1600 760 L1600 900 L0 900 Z" fill="#0b2742" fill-opacity="0.84"/>
+  <path d="M160 778 C360 710 650 700 885 785 S1320 865 1600 758 L1600 900 L0 900 L0 816 C66 798 116 786 160 778 Z" fill="#ffffff" fill-opacity="0.14"/>
+  <g transform="translate(118 104)">
+    <rect width="660" height="250" rx="34" fill="url(#glass)" stroke="rgba(255,255,255,0.28)"/>
+    <text x="46" y="72" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="5">GRAND SK HOLIDAYS</text>
+    <text x="46" y="146" font-family="Poppins, Arial, sans-serif" font-size="82" font-weight="700" fill="#ffffff">Tour Itinerary</text>
+    <text x="46" y="204" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="400" fill="#eef7ff">Connect your destination banner image here for the final page.</text>
+  </g>
+  <g transform="translate(116 632)">
+    <rect width="430" height="118" rx="26" fill="#ffffff" fill-opacity="0.16"/>
+    <text x="36" y="54" font-family="Poppins, Arial, sans-serif" font-size="27" font-weight="600" fill="#ffffff">Suggested use</text>
+    <text x="36" y="92" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="400" fill="#ffffff">International and domestic hero images</text>
+  </g>
+</svg>

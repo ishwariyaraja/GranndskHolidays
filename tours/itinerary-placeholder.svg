@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tour itinerary image placeholder</title>
+  <desc id="desc">A scenic placeholder image for itinerary pages until package images are connected.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f4c81"/>
+      <stop offset="52%" stop-color="#1d6fa5"/>
+      <stop offset="100%" stop-color="#f1b85d"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#dce8f5" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1240" cy="180" r="92" fill="#fff4cf" fill-opacity="0.95"/>
+  <path d="M0 650 L220 500 L360 590 L560 410 L760 620 L970 430 L1180 650 L1390 470 L1600 620 L1600 900 L0 900 Z" fill="#163b5e" fill-opacity="0.58"/>
+  <path d="M0 715 L160 590 L320 665 L520 520 L700 705 L900 545 L1110 730 L1300 600 L1600 740 L1600 900 L0 900 Z" fill="#0d2942" fill-opacity="0.78"/>
+  <path d="M540 430 L615 535 L465 535 Z" fill="url(#mountain)"/>
+  <path d="M970 450 L1048 560 L892 560 Z" fill="url(#mountain)"/>
+  <path d="M180 770 C360 690 610 680 820 760 S1280 860 1600 760 L1600 900 L0 900 L0 810 C70 790 130 780 180 770 Z" fill="#ffffff" fill-opacity="0.14"/>
+  <g fill="#ffffff">
+    <text x="120" y="160" font-family="Poppins, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="4">GRAND SK HOLIDAYS</text>
+    <text x="120" y="235" font-family="Poppins, Arial, sans-serif" font-size="88" font-weight="700">Add Your Tour Image Here</text>
+    <text x="120" y="305" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="400" fill-opacity="0.92">Replace this shared placeholder in the itinerary hero carousel when your final package images are ready.</text>
+  </g>
+  <g transform="translate(120 640)">
+    <rect width="500" height="130" rx="24" fill="#ffffff" fill-opacity="0.16"/>
+    <text x="36" y="56" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="600" fill="#ffffff">Hero image connection point</text>
+    <text x="36" y="98" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="400" fill="#ffffff" fill-opacity="0.9">Use this slot for destination banner images on itinerary pages.</text>
+  </g>
+</svg>
